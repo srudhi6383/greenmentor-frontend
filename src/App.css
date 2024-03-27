@@ -1,0 +1,29 @@
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    max-height: 10px;
+  }
+  100% {
+    opacity: 1;
+    max-height: 500px; /* Adjust the max height as needed */
+  }
+}
+
+@keyframes slideUp {
+  0% {
+   
+    max-height: 10px; /* Adjust the max height as needed */
+  }
+  100% {
+   
+    max-height: 40px;
+  }
+}
+
+.animate-expand {
+  animation: slideDown 0.7s ease-in-out forwards;
+}
+
+.animate-collapse {
+  animation: slideUp 0.7s ease-in-out forwards;
+}

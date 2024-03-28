@@ -49,4 +49,4 @@ const loginReducer = (state = initialState,{type,payload}) => {
   }
 };
 
-export { loginReducer };
+export default loginReducer;

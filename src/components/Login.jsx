@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
-import { login } from "../redux/Login/action";
+import { login } from "../redux/login/action";
 import {
   Box,
   Button,
@@ -23,7 +23,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
-  const [loginError, setLoginError] = useState(false); // State to track login error
+  const [loginError, setLoginError] = useState(false); 
   const isAuth = useSelector((store) => store.loginReducer.isAuth);
 
   useEffect(() => {
@@ -41,9 +41,7 @@ const Login = () => {
     }
 
     dispatch(login({ email, password }))
-        // If login is successful, isAuth will be true
         if (!isAuth) {
-          // If login fails, set loginError to true
           setLoginError(true);
         }
   };

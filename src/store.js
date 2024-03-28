@@ -1,8 +1,8 @@
 import { legacy_createStore, applyMiddleware, combineReducers } from 'redux';
 import {thunk} from 'redux-thunk';
-import { loginReducer } from './redux/Login/reducer';
-import { signupReducer } from './redux/Register/reducer';
-import { taskReducer} from './redux/Task/reducer'
+import { loginReducer } from './redux/login/reducer';
+import { signupReducer } from './redux/register/reducer';
+import { taskReducer} from './redux/task/reducer'
 
 const rootReducer = combineReducers({loginReducer,signupReducer,taskReducer});
 

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchtasks, deletetask } from '../redux/Task/action';
-import { Box, Button, Heading, Flex, Input, Select, Text, background } from '@chakra-ui/react';
+import { fetchtasks, deletetask } from '../redux/task/action';
+import { Box, Button, Heading, Flex, Input, Select, Text } from '@chakra-ui/react';
 import TaskTable from './TaskTable';
 import TaskModal from './TaskModal';
 import { useNavigate } from 'react-router';
-import { logout } from '../redux/Login/action';
+import { logout } from '../redux/login/action';
 
 const Task = () => {
   const dispatch = useDispatch();

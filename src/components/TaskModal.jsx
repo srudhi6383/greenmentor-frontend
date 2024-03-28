@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, VStack, FormControl, FormLabel, Input, Textarea, Button, FormErrorMessage } from "@chakra-ui/react";
 import { useDispatch } from 'react-redux';
-import { addtask, updatetask } from '../redux/Task/action';
+import { addtask, updatetask } from '../redux/task/action';
 
 const TaskModal = ({ isOpen, onClose, selectedtask, token }) => {
   const dispatch = useDispatch();

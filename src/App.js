@@ -1,16 +1,27 @@
-import './App.css';
-import MainRoute from './MainRoute';
-import NavBar from './components/NavBar';
+import React from 'react';
+import Login from './components/Login';
+import Register from "./components/Signup";
+import { Route, Routes } from 'react-router-dom';
+import Task from './components/Task';
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
-  return (
-    <div className="App">
-      <NavBar/>
-      <div className='mt-20'>
-     <MainRoute/>
 
-      </div>
-    </div>
+  const isAuthenticated = true; 
+
+  return (
+        <Routes>
+          <Route path="/" element={<Login/>} />
+          <Route path="/register" element={<Register/>} />
+          <Route
+            path="/task"
+            element={
+              <PrivateRoute>
+                <Task />
+              </PrivateRoute>
+            }
+          />
+        </Routes>
   );
 }
 

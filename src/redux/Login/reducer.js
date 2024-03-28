@@ -10,7 +10,6 @@ const initialState = {
 };
 
 const loginReducer = (state = initialState,{type,payload}) => {
-  // console.log(payload)
   switch(type){
     case LOGIN_REQUEST:
       return{
@@ -49,4 +48,4 @@ const loginReducer = (state = initialState,{type,payload}) => {
   }
 };
 
-export default loginReducer;
+export { loginReducer };

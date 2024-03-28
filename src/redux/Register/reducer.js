@@ -34,4 +34,4 @@ const signupReducer = (state = initialState, { type, payload }) => {
   }
 };
 
-export default signupReducer ;
+export { signupReducer };

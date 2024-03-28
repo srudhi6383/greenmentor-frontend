@@ -7,7 +7,6 @@ import PrivateRoute from './components/PrivateRoute';
 
 function App() {
 
-  const isAuthenticated = true; 
 
   return (
         <Routes>

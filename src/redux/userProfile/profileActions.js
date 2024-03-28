@@ -10,7 +10,7 @@ import {
   EDIT_USER_PROFILE_FAILURE,
 } from './profileActionTypes';
 
-const BASE_URL = process.env.REACT_APP_BASEURL;
+const BASE_URL = "https://greenmentor-backend-69my.onrender.com/";
 
 // Action creators for getting user profile
 export const getUserProfileRequest = () => ({

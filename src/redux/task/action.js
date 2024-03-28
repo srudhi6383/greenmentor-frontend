@@ -8,7 +8,7 @@ import {
   TASK_ERROR,
 } from './actiontype';
 
-const BASE_URL = process.env.REACT_APP_BASEURL;
+const BASE_URL = "https://greenmentor-backend-69my.onrender.com/";
 
 // Action creator for task request
 export const taskRequest = () => ({

@@ -5,7 +5,7 @@ import {
   POST_USER_REQUEST,
   POST_USER_SUCCESS,
 } from "./actiontype";
-const BASE_URL = process.env.REACT_APP_BASEURL;
+const BASE_URL = "https://greenmentor-backend-69my.onrender.com/";
 const login = (data) => async (dispatch) => {
   return await axios.post(BASE_URL + "/users/login", data);
 };
